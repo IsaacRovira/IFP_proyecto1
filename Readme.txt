@@ -15,3 +15,4 @@ Entidades:
 Fase1:
 
 	-Crear la base de datos (MySQL) --Revisar-- 26/03/2017
+	-Prepara PHP
