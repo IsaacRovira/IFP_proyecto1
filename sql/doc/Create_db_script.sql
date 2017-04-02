@@ -59,12 +59,9 @@ CREATE TABLE products(
   productid INT,
   productname VARCHAR(50) NOT NULL,
   productdescp VARCHAR(300),
-  productqtty INT NOT NULL DEFAULT 0,
+  productqtty INT UNSIGNED NOT NULL,
   productcost FLOAT NOT NULL,
-  CONSTRAINT products_pk PRIMARY KEY AUTO_INCREMENT(productid),
-  CONSTRAINT check_qtty
-CHECK
-  (productqtty >= 0)
+  CONSTRAINT products_pk PRIMARY KEY AUTO_INCREMENT(productid)
 );
 
 /*
