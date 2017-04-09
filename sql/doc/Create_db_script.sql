@@ -66,7 +66,7 @@ CREATE TABLE products(
 
 /*
 Tabla facturas.
-Id del cliente, fecha factura, descuento global aplicado, iva aplicado.
+Agrupa los productos vendidos en una venta y los relaciona con un cliente: Id del cliente, fecha factura (venta), descuento global aplicado, iva aplicado.
 Se relaciona con la tabla customers y sales.
 */
 CREATE TABLE invoices(
@@ -82,6 +82,7 @@ CREATE TABLE invoices(
 
 /*
 Tabla ventas.
+Recogera la venta de cada producto: la cantidad, el precio unitario, el descuento.
 Id del producto, id de la factura, precio de venta unidad, descuento sobre el precio de venta, cantidad vendida.
 */
 CREATE TABLE sales(
